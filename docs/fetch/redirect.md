@@ -5,7 +5,7 @@ new: true
 
 # `redirect`
 
-Because you can return or throw responses in loaders and actions, you can use `redirect` to redirect to another route.
+Comme vous pouvez retourner ou lancer des réponses depuis les loaders ou actions, vous pouvez utiliser `redirect` pour rediriger vers une autre route.
 
 ```jsx
 import { redirect } from "react-router-dom";
@@ -18,7 +18,7 @@ const loader = async () => {
 };
 ```
 
-It's really just a shortcut for this:
+Il s'agit en réalité d'un raccourci pour ceci :
 
 ```jsx
 new Response("", {
@@ -29,13 +29,13 @@ new Response("", {
 });
 ```
 
-It's recommended to use `redirect` in loaders and actions rather than `useNavigate` in your components when the redirect is in response to data.
+Il est recommandé d'utiliser `redirect` dans vos loaders et actions plutôt qu'utiliser `useNavigate` dans vos composants, lorsque la redirection est en réaction aux données.
 
-See also:
+Lire également :
 
-- [Returning Responses from Loaders][responses]
+- [Retourner des réponses depuis les loaders][responses]
 
-## Type Declaration
+## Déclaration de type
 
 ```ts
 type RedirectFunction = (
@@ -46,7 +46,7 @@ type RedirectFunction = (
 
 ## `url`
 
-The URL to redirect to.
+L'URL vers laquelle rediriger.
 
 ```js
 redirect("/login");
@@ -54,7 +54,7 @@ redirect("/login");
 
 ## `init`
 
-The [Response][response] options to be used in the response.
+Les options de l'objet [Response][response] utilisé comme réponse.
 
 [responses]: ../route/loader#returning-responses
 [response]: https://developer.mozilla.org/en-US/docs/Web/API/Response/Response
