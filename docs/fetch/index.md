@@ -1,4 +1,4 @@
 ---
-title: Fetch Utilities
+title: Utilitaires Fetch
 order: 8
 ---

@@ -5,7 +5,7 @@ new: true
 
 # `json`
 
-A shortcut for:
+Un raccourci pour :
 
 ```jsx
 new Response(JSON.stringify(someValue), {
@@ -15,7 +15,7 @@ new Response(JSON.stringify(someValue), {
 });
 ```
 
-Typically used in loaders:
+Généralement utilisé dans les loaders :
 
 ```jsx
 import { json } from "react-router-dom";
@@ -26,8 +26,8 @@ const loader = async () => {
 };
 ```
 
-See also:
+Lire également :
 
-- [Returning Responses from Loaders][responses]
+- [Retourner des réponses depuis les loaders][responses]
 
 [responses]: ../route/loader#returning-responses
